@@ -9,7 +9,7 @@ describe('Button', () => {
     it('should show text', ()=> {
         const wrapper = shallow(<Button/>);
         const text = wrapper.find('div div')
-        expect(text.text()).toBe('Text');
+        expect(text.text()).toBe('To be or not to be. That is the question.');
     })
 
     it('should hide text when button clicked', () => {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './../css/button.css';
 
 
 class Button extends Component {
@@ -11,9 +12,9 @@ class Button extends Component {
     render() { 
         const { isShown} =this.state;
         return ( 
-            <div>
-                <button onClick={this.toggleIsShown}>Toggle</button>
-                {isShown && <div>Text</div>}
+            <div className='toggle'>
+                <button onClick={this.toggleIsShown}>Press To Hide Text</button>
+                {isShown && <div><h4>To be or not to be. That is the question.</h4></div>}
             </div>
          );
     }

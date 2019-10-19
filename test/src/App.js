@@ -1,13 +1,14 @@
 import React from 'react';
-import './css/app.scss';
+import './css/app.css';
 import Header from './component/Header';
+import Button from './component/Button';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
      <Header/>
-       
+       <Button/>
     </div>
   );
 }
